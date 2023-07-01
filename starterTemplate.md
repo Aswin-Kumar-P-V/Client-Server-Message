@@ -7,7 +7,7 @@ The client connects to the server using net.Dial and sends a message. It then re
 To run this example, you can start the server in one terminal window by running go run server.go and then start the client in another terminal window by running go run client.go. You should see the server and client exchanging messages.</p>
 
 ## Server Program:
-<code>
+`
 package main
 
 import (
@@ -50,11 +50,11 @@ func main() {
 		go handleConnection(conn)
 	}
 }
-</code>
+`
 
 ## Client Program
 
-<code>
+`
 package main
 
 import (
@@ -83,5 +83,4 @@ func main() {
 	response := string(buffer[:n])
 	fmt.Println("Server response:", response)
 }
-
-</code>
+`
